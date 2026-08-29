@@ -49,3 +49,6 @@ terraform/**/.terraform.lock.hcl.backup
 # === その他 ===
 *.log
 tmp/
+
+# Claude Code 用のローカル指示書(リポジトリには含めない)
+CLAUDE.md
