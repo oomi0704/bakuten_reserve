@@ -1,0 +1,51 @@
+# === OS / エディタ ===
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# === 環境変数・秘密情報 ===
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# === Rails (app/ 配下) ===
+app/log/*
+app/tmp/*
+!app/log/.keep
+!app/tmp/.keep
+app/storage/*
+!app/storage/.keep
+app/public/assets/
+app/public/packs/
+app/node_modules/
+app/vendor/bundle/
+app/config/master.key
+app/config/credentials/*.key
+app/.bundle/
+app/db/*.sqlite3
+app/db/*.sqlite3-*
+
+# === Docker ===
+docker-compose.override.yml
+
+# === Terraform ===
+terraform/**/.terraform/
+terraform/**/*.tfstate
+terraform/**/*.tfstate.*
+terraform/**/*.tfvars
+!terraform/**/*.tfvars.example
+terraform/**/crash.log
+terraform/**/override.tf
+terraform/**/override.tf.json
+terraform/**/*_override.tf
+terraform/**/*_override.tf.json
+terraform/**/.terraform.lock.hcl.backup
+
+# === その他 ===
+*.log
+tmp/
